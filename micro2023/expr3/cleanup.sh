@@ -3,6 +3,6 @@
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cd ${DIR}
 
-rm inputs/workload/all_reduce/*.eg
-rm inputs/workload/all_reduce/debug.log
 rm result*.txt
+rm inputs/workload/*.eg
+rm inputs/workload/debug.log

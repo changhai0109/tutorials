@@ -1,9 +1,11 @@
 #!/bin/bash
 
+# delete astra-sim codes/builds
 rm -rf astra-sim
 
+# uninstall chakra and its prerequests
 python3 -m pip uninstall pydot graphviz -y
 python3 -m pip uninstall chakra -y
 
-bash expr1/cleanup.sh
-bash expr2/cleanup.sh
+# cleanup expr results
+bash cleanup_exprs.sh

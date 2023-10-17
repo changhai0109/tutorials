@@ -5,6 +5,8 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 ASTRASIM_DIR=${DIR}/../astra-sim
 ASTRASIM_BIN=${ASTRASIM_DIR}/build/astra_analytical/build/AnalyticalAstra/bin/AnalyticalAstra
 
+cd ${DIR}
+
 NETWORK=${DIR}/inputs/network/Torus2D.json
 SYSTEM=${DIR}/inputs/system/Torus2D.txt
 MEMORY=${DIR}/inputs/memory/no_memory_expansion.json
